@@ -1,0 +1,147 @@
+body {
+    background-image: linear-gradient(#636162, #bbb);
+    height: 138vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Monteserrrat', sans-sarif;
+}
+
+.main {
+    background-color: white;
+    height: auto;
+    width: 650px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+}
+
+.left {
+    background-color: pink;
+    width: 220px;
+    height: 100%;
+    float: left;
+}
+
+.right {
+    width: 400px;
+    float: right;
+}
+
+.profile-pic {
+    height: 200px;
+    width: 200px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    border: 10px solid pink;
+    box-shadow: 6px 7px 9px 5px pink;
+}
+.profile-pic img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.box1{
+position:relative;
+}
+.heading{
+    background-color: antiquewhite;
+    padding: 10px;
+    color: pink;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: -15px;
+}
+.heading::after{
+content: '';
+position: absolute;
+width: 21px;
+height: 18px;
+background-color: grey;
+left: 191px;
+top: 26px;
+transform: rotate(56deg);
+z-index: -1;
+}
+.p1{
+    padding: 9px 10px;
+    font-size: 11px;
+}
+.skill_container{
+width: 90%;
+background-color: white;
+margin: 0px 10px;
+}
+.skill{
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+}
+.html{
+    width: 85%;
+    background-color: black;
+}
+.css{
+    width: 70%;
+    background-color: black;
+}
+.javascript{
+    width: 70%;
+    background-color: black;
+}
+.java{
+    width: 95%;
+    background-color: black;
+}
+.python{
+    width: 80%;
+    background-color: black;
+}
+.web{
+    width: 80%;
+    background-color: black;
+}
+.graphics{
+    width: 75%;
+    background-color: black;
+}
+.backend{
+    width: 90%;
+    background-color: black;
+}
+.name-div{
+    padding: 86px 0px 60px 55px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.name-div h1{
+    margin-bottom:10px;
+}
+.box-2{
+    padding: 0px 50px;
+    margin-top: 30px;
+}
+.p2{
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 18px;
+    margin-top: 5px;
+}
+h2{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+li{
+    font-size: 10px;
+}

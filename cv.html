@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cvStyling.css">
+    <script src="html2pdf.bundle.min.js"></script>
+    <title>Zikali Resume</title>
+
+</head>
+
+<body>
+    <button class="btn" id="buttonD"> Download pdf</button>
+    <div class="main" id="tobetaken">
+        <div class="left">
+            <br>
+            <div class="profile-pic"><img src="images/IMG_7695.JPG"></div>
+
+            <div class="box1">
+                <div class="heading">
+                    <p>CONTACT</p>
+                </div>
+                <p class="p1"><i>call </i>+263 775 854 111</p>
+                <p class="p1"><i>email </i>tadiwatadiwa@gmail.com</p>
+            </div>
+
+            <div class="box1">
+                <div class="heading">
+                    <p>LANGUAGES </p>
+                </div>
+
+                <p class="p1">HTML
+                <div class="skill_container">
+                    <div class="skill html"></div>
+                </div>
+                </p>
+
+                <p class="p1">CSS
+                <div class="skill_container">
+                    <div class="skill css"></div>
+                </div>
+                </p>
+
+                <p class="p1">Javascript
+                <div class="skill_container">
+                    <div class="skill javascript"></div>
+                </div>
+                </p>
+
+                <p class="p1">Java
+                <div class="skill_container">
+                    <div class="skill java"></div>
+                </div>
+                </p>
+
+                <p class="p1">Python
+                <div class="skill_container">
+                    <div class="skill python"></div>
+                </div>
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="box1">
+                <div class="heading">
+                    <p>SKILLS </p>
+                </div>
+
+                <p class="p1">WEB DESIGN
+                <div class="skill_container">
+                    <div class="skill web"></div>
+                </div>
+                </p>
+
+                <p class="p1">GRAPHIC DESIGN
+                <div class="skill_container">
+                    <div class="skill graphics"></div>
+                </div>
+                </p>
+
+                <p class="p1">BACKEND DEVELOPMENT
+                <div class="skill_container">
+                    <div class="skill backend"></div>
+                </div>
+                </p>
+
+            </div>
+            <br>
+            <div class="box1">
+                <div class="heading">
+                    <p>Hobbies </p>
+                </div>
+
+                <li>Reading</li>
+                <li>Coding</li>
+                <li>Cooking</li>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="name-div">
+                <h1>Tadiwanashe Zikali</h1>
+                <p>CyberPunk</p>
+            </div>
+            <div class="box-2">
+                <h2>About Me</h2>
+                <p class="p2">
+                    I am a fullstack developer and a cyber security analyst currently employed and working @HIT
+                    I'm male and 22 years old. This Portfolio is a test portofolio and has been created for educational
+                    purposes only.
+                    Thank you!!!
+                </p>
+            </div>
+
+            <br>
+            <div class="box-2">
+                <h2>Education</h2>
+                <p class="p2">
+                    <li>Marondera High 2016-2019</li>
+                    <li>Cherutombo High 2020-2022</li>
+                    <li>HIT 2022-Current Date</li>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('buttonD');
+
+        function generatePDF() {
+            const element = document.getElementById('tobetaken');
+            html2pdf().from(element).save();
+        }
+
+        button.addEventListener('click', generatePDF);
+    </script>
+</body>
+
+
+</html>
